@@ -34,21 +34,10 @@ let temp = 82
 let isRaining = true
 let isSunny = true
 
-let isNiceWeather = {
+let isNiceWeather = !isRaining || (temp >= 82 && isSunny)
 
-    if isRaining == false {
-        true
-}
-    else if temp >= 82 && isSunny == true {
-        true
-}
-    else {
-        false
-}
-}
-
-if isNiceWeather == true {
-    print("let's go!")
+if isNiceWeather {
+    print("I'm going for a walk!")
 }
 
 //: [Previous](@previous)  |  page 4 of 9  |  [Next: App Exercise - Target Heart Rate](@next)
